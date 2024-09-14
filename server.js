@@ -160,9 +160,8 @@ app.delete("/jobs/:id", async (req, res) => {
 });
 // Test API (GET)
 app.get("/", (req, res) => {
-  res.status(200).json({ message: "API is working" });
+  res.status(200).send("API is working");
 });
-
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
